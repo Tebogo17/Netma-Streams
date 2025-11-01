@@ -1,16 +1,62 @@
-# React + Vite
+# 🎬 Netma Streams
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Netma Streams** is a web-based video streaming platform designed to showcase creative and educational content — developed by **Tebogo Nelson Mashabane** and the **neTma Group**.  
+It provides users with an intuitive interface to explore, watch, and interact with video content in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🎥 Stream and showcase videos dynamically  
+- 🔍 Browse featured and trending content  
+- 🧠 Responsive, modern UI built with React and Vite  
+- 🧩 Component-based architecture for scalability  
+- 🌐 Deployed on [Vercel](https://vercel.com)  
+- 🛠️ Ready for backend API integration (authentication, comments, etc.)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Technology |
+|-----------|-------------|
+| **Frontend Framework** | React (with Vite) |
+| **Routing** | React Router DOM |
+| **Styling** | CSS Modules |
+| **Build Tool** | Vite |
+| **Deployment** | Vercel |
+| **Version Control** | Git + GitHub |
+
+---
+
+## 📁 Project Structure
+netma-stream/
+│
+├── src/
+│ ├── assets/ # Images, thumbnails, and static assets
+│ │ ├── thumbnail1.png
+│ │ ├── thumbnail2.png
+│ │ ├── pukkeconnect.png
+│ │ └── mustang.jpg
+│ │
+│ ├── Components/ # Reusable UI components
+│ │ ├── Feed/
+│ │ │ ├── Feed.jsx # Displays list of video cards
+│ │ │ └── Feed.css
+│ │ └── Navbar/
+│ │ ├── Navbar.jsx
+│ │ └── Navbar.css
+│ │
+│ ├── Pages/ # Route-level pages (e.g., Home, Video)
+│ │ ├── Home.jsx
+│ │ ├── Video.jsx
+│ │ └── NotFound.jsx
+│ │
+│ ├── App.jsx # Root component defining routes
+│ ├── main.jsx # Entry point (Vite + ReactDOM)
+│ └── index.css # Global styles
+│
+├── package.json
+├── vite.config.js
+├── README.md
+└── .gitignore
