@@ -7,6 +7,7 @@ import share from '../../assets/share.png'
 import save from '../../assets/save.png'
 import tebogo from '../../assets/tebogo.jpg'
 import user_profile from '../../assets/user_profile.jpg'
+import jack from '../../assets/jack.png'
 
 
 const PlayVideo = () => {
@@ -27,8 +28,8 @@ const PlayVideo = () => {
         <div className='publisher'>
             <img src={tebogo} alt="" />
             <div>
-                <p>neTma Group</p>
-                <span>2435 Subscribers</span>
+                <p>NeTma Group</p>
+                <span>17M Subscribers</span>
             </div>
             <button>Subscribe</button>
         </div>
@@ -41,7 +42,7 @@ const PlayVideo = () => {
                 <img src={user_profile} alt="" />
                 <div>
                     <h3>Tebogo Mashabane <span>1 day ago</span></h3>
-                    <p>We are being inspired by your</p>
+                    <p> GREAT content from the Netma Group!🔥 </p>
                     <div className="comment-action">
                         <img src={like} alt="" />
                         <span>244</span>
@@ -53,11 +54,11 @@ const PlayVideo = () => {
              <div className='comment'>
                 <img src={user_profile} alt="" />
                 <div>
-                    <h3>Tebogo Mashabane <span>1 day ago</span></h3>
-                    <p>We are being inspired by your</p>
+                    <h3>Lethabo Maepa <span>6 day ago</span></h3>
+                    <p>Dope trip ,next year its me and my girl🎯</p>
                     <div className="comment-action">
                         <img src={like} alt="" />
-                        <span>244</span>
+                        <span>434</span>
                         <img src={dislike} alt="" />
                         
                     </div>
@@ -66,11 +67,11 @@ const PlayVideo = () => {
              <div className='comment'>
                 <img src={user_profile} alt="" />
                 <div>
-                    <h3>Tebogo Mashabane <span>1 day ago</span></h3>
-                    <p>We are being inspired by your</p>
+                    <h3>Kutullo Radiangone <span>5 days ago</span></h3>
+                    <p>Lets keep pushing for our dreams!🙂‍💯</p>
                     <div className="comment-action">
                         <img src={like} alt="" />
-                        <span>244</span>
+                        <span>258</span>
                         <img src={dislike} alt="" />
                         
                     </div>

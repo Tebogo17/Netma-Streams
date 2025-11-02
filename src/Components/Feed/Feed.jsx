@@ -9,7 +9,7 @@ import thumbnail6 from '../../assets/thumbnail6.png'
 import thumbnail7 from '../../assets/thumbnail7.png'
 import thumbnail8 from '../../assets/thumbnail8.png'
 import mustang from '../../assets/mustang.jpg'
-import pukke from '../../assets/pukke.png'
+import pukkeconnect from '../../assets/pukkeconnect.png'
 import { Link } from 'react-router-dom'
 
 const Feed = () => {
@@ -40,7 +40,7 @@ const Feed = () => {
             <p>15k views &bull; 2 days ago</p>
         </div> 
         <div className='card'>
-            <img src={pukke} alt="" />
+            <img src={pukkeconnect} alt="" />
             <h2>PukkeConnect system demonstration</h2>
             <h3>neTma Group</h3>
             <p>764 views &bull; 1 day ago</p>
