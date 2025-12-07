@@ -1,6 +1,6 @@
 # 🎬 Netma Streams
 
-**Netma Streams** is a web-based video streaming platform designed to showcase creative and educational content — developed by **Tebogo Nelson Mashabane** and the **neTma Group**.  
+**Netma Streams** is a web-based video streaming platform designed to showcase creative and educational content.  
 It provides users with an intuitive interface to explore, watch, and interact with video content in real time.
 
 ---
