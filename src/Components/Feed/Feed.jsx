@@ -11,7 +11,7 @@ import thumbnail8 from '../../assets/thumbnail8.png'
 import mustang from '../../assets/mustang.jpg'
 import pukkeconnect from '../../assets/pukkeconnect.png'
 import { Link } from 'react-router-dom'
-import {API_KEY} from '../../data'
+import {API_KEY, value_converter} from '../../data'
 
 const Feed = ({category}) => {
 
@@ -34,7 +34,7 @@ const Feed = ({category}) => {
             <img src={item.snippet.thumbnails.medium.url} alt="" />
             <h2>{item.snippet.title}</h2> 
             <h3>{item.snippet.channelTitle}</h3>
-            <p>{item.statistics.viewCount}400 views &bull; 4 hours ago</p>
+            <p>{value_converter(item.statistics.viewCount)} views &bull; {item.snippet.publishedAt}</p>
         </Link>
             )
         })}
