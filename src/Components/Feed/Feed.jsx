@@ -12,6 +12,7 @@ import mustang from '../../assets/mustang.jpg'
 import pukkeconnect from '../../assets/pukkeconnect.png'
 import { Link } from 'react-router-dom'
 import {API_KEY, value_converter} from '../../data'
+import moment from 'moment'
 
 const Feed = ({category}) => {
 
@@ -26,22 +27,32 @@ const Feed = ({category}) => {
     },[category])
 
   return (
-    <div className="feed">
-        {data.map((item, index) => {
-            return (
-        <Link to={`video/${item.snippet.categoryId}/${item.Id}`} className='card'>
+  <div className="feed">
+    {data.map((item, index) => {
+      const videoId =
+        typeof item.id === "string" ? item.id : item.id?.videoId;
 
-            <img src={item.snippet.thumbnails.medium.url} alt="" />
-            <h2>{item.snippet.title}</h2> 
-            <h3>{item.snippet.channelTitle}</h3>
-            <p>{value_converter(item.statistics.viewCount)} views &bull; {item.snippet.publishedAt}</p>
+      if (!videoId) return null; // prevents /undefined
+
+      return (
+        <Link
+          key={index}
+          to={`/video/${item.snippet.categoryId}/${videoId}`}
+          className="card"
+        >
+          <img src={item.snippet.thumbnails.medium.url} alt="" />
+          <h2>{item.snippet.title}</h2>
+          <h3>{item.snippet.channelTitle}</h3>
+          <p>
+            {value_converter(item.statistics.viewCount)} views &bull;{" "}
+            {moment(item.snippet.publishedAt).fromNow()}
+          </p>
         </Link>
-            )
-        })}
-        
-       
-    </div>
-  )
+      );
+    })}
+  </div>
+);
+
 }
 
 export default Feed

@@ -8,6 +8,7 @@ import more_icon from '../../assets/more.png'
 import notification_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/tebogo.jpg'
 import netma from '../../assets/netma.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -16,7 +17,7 @@ const Navbar = ({setSidebar}) => {
     <nav className = 'flex-div'>
         <div className='nav-left flex-div'>
             <img className='menu-icon' onClick={()=> setSidebar(prev => prev === false ? true : false)} src= {menu_icon} alt="" />
-            <img className='logo' src = {netma} alt="" />
+           <Link to= '/'><img className='logo' src = {netma} alt="" /></Link> 
         </div>
 
 
